@@ -14,6 +14,13 @@
 * {
     --title-font : 'Frunchysage',  sans-serif;
     --body-font : 'Lora', sans-serif;
+
+    -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
+*::-webkit-scrollbar {
+  display: none;
 }
 
 
@@ -80,29 +87,57 @@ header {
 
 }
 
+/*ACCUEIL*/
+
 .accueil {
-  
+  position: relative;
     height:80vh;
 }
 
-.slogan {
+.img-accueil {
+    width: 100vw;
+    height: 75vh;
+
+    margin-bottom: 3rem;
+   
+}
+.img-accueil > img  {
     width: 100%;
     height: 100%;
+
+     object-fit: cover;
+
+    margin-bottom: 3rem;
+
+}
+
+
+
+.slogan {
+    width: 100%;
+    height: auto;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    position: absolute;
+    left: 25%;
+    top: 25%;
+
+    z-index: 4;
 
 }
 
 .slogan p {
 
+    color: white;
     font-family: var(--body-font);
     font-size: 3rem;
     font-weight: 900; 
 
     padding: 5rem 15px;
     border-radius: 15px;
-    border: #6C8350 solid 5px;
+    border: transparent solid 0px;
+    background-color: rgba(224, 224, 213, 0.44);
+     text-shadow: 1px 1px 1px black; 
+    
 }
 
 .header_logo_section {
@@ -136,33 +171,37 @@ header {
 .services_3 {
     position: relative;
     margin-bottom: 2rem;
-    height: 80vh;
+    height: 92vh;
 }
-.services h1 {
-        margin-left: 4rem;
-        font-size: 3rem;
-        font-family: var(--title-font);
-        color: #6C8350;
-        letter-spacing: 4px;
-}
-
-.services_1-corpus,
+.services_1-corpus, 
 .services_2-corpus,
 .services_3-corpus {
+    position: relative;
+  display: flex;
+  justify-content: space-between;
+}
+
+
+
+
+.services_1-text,
+.services_2-text,
+.services_3-text {
     margin-top: 5rem;
     margin-left: 2.5rem;
     width: 40vw;
+    height: fit-content;
     font-size: 1.3rem;
     text-align: start;
 
     padding: 15px 15px;
     border: solid black 7px;
-    border-radius: 3px;
+    border-radius: 10px;
    
 }
-.services_1-corpus p,
-.services_2-corpus p,
-.services_3-corpus p {
+.services_1-text p,
+.services_2-text p,
+.services_3-text p {
     margin-bottom: 40px;
 }
 
@@ -173,7 +212,7 @@ header {
    
     padding: 15px 50px;
     border-radius: 14px;
-    border: solid rgb(182, 182, 182) 3px;
+   
     background-color:  #6C8350;
 }
 
@@ -185,9 +224,82 @@ header {
     font-weight: 900;
 }
 
+.services_1-img,
+.services_2-img,
+.services_3-img {
+    margin-right: 5rem;
+}
+
+/*SERVICES1*/
+
+.services_1-img {
+    position: absolute;
+    right: 0%;
+    display: flex;
+    width: 595px;
+    height: 490px;
+
+}
+
+.services_1-img > img{
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+}
+.services h1 {
+        margin-left: 4rem;
+        font-size: 3rem;
+        font-family: var(--title-font);
+        color: #6C8350;
+        letter-spacing: 4px;
+}
+
+/*SERVICES2*/
+
+.services_2-img {
+        position: absolute;
+        right: 0%;
+
+        display: flex;
+        width: 620px;
+        height: 471px;
+
+}
+
+.services_2-img > img{
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+}
+/*SERVICES3*/
+
+.services_3-img {
+        position: absolute;
+        right: 0%;
+        top: 12%;
+
+        display: flex;
+        width: 620px;
+        height: 471px;
+      
+
+}
+
+.services_3-img > img{
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+}
+
+/*QUI SOMMES NOUS?*/
+
 .apropos {
     height: 95vh;
     background-color: #E0E0D5;
+    position: relative;
 }
 
 .apropos h1 {
@@ -203,6 +315,102 @@ header {
     padding: 15px;
     
 }
+
+.apropos-corpus {
+
+    margin-left: 5rem;
+
+    font-size: 1.2rem;
+    line-height: 1.2;
+    position: relative;
+}
+
+.apropos-text p {
+    margin-bottom: 20px;
+}
+.apropos-text p:first-child {
+
+    width: 70vw;
+   
+}
+
+.apropos-text p:nth-child(2),
+.apropos-text p:nth-child(3) {
+    margin-bottom: 20px;
+    width: 60vw;
+}
+
+.apropos-text p:last-child {
+    margin-top: 40px;
+    margin-left: 50px;
+}
+
+.apropos-img {
+    width: 191px;
+    height: 286px;
+    position: absolute;
+     right: 22%;
+    top: 45%;
+
+    
+}
+
+.apropos-img > img  {
+    width: 100%;
+    height: 100%;
+
+    border-radius: 20px;
+     
+}
+
+.apropos-img2 {
+    width: 191px;
+    height: 286px;
+    position: absolute;
+    right: 9%;
+    top: 0%;
+
+    
+}
+
+.apropos-img2 > img  {
+    width: 100%;
+    height: 100%;
+
+    border-radius: 20px;
+     
+}
+
+.apropos-footer {
+    width: 100%;
+   bottom: 10px;
+    position: absolute;
+     display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.Mdevis_button {
+   
+   
+    width: fit-content;
+     padding:20px 5rem;
+     background-color: #6C8350;
+     border-radius: 10px;
+     border: solid white 5px;
+
+}
+
+.Mdevis_button a{
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+    font-size: 2rem;
+
+   
+
+   
+}
+
 
 
 
