@@ -1,7 +1,13 @@
 
-gsap.registerPlugin(ScrollTrigger) 
 
-gsap.to('#section1', {
-    scrollTrigger: '#section1', // start animation when ".box" enters the viewport
-    x: 500
+gsap.registerPlugin(ScrollTrigger, ScrollSmoother);
+
+gsap.from('#section2', {
+    x: -500,
+    scrollTrigger: {
+        trigger: '#section1', // Élément déclencheur
+        start: 'top center',  // Début de l'animation (position de l'élément par rapport à la fenêtre)
+        end: 'bottom top',    // Fin de l'animation
+        scrub: true           // Synchronisation avec le défilement
+    }
 });
