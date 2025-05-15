@@ -17,18 +17,19 @@
         <div class="header_nav">
             <nav>
                 <ul>
-                    <li>ACCUEIL</li>
-                    <li>SERVICES</li>
-                    <li>A PROPOS</li>
-                    <li>DEVIS</li>
-                    <li>CONTACT</li>
+                    <li><a href="#section1">ACCUEIL</a></li>
+                    <li><a href="#section2">SERVICES</a></li>
+                    <li><a href="#section3">A PROPOS</a></li>
+                    <li><a href="#section3">DEVIS</a></li>
+                    <li><a href="#section3">CONTACT</a></li>
+
                 </ul>
             </nav>
         </div>
     </header>
 
     <main>
-        <section class="accueil">
+        <section class="accueil" id="section1">
            <div class="img-accueil">
                  <img src="assets/image_content/imageAccueil.jpeg" alt="">
            </div>
@@ -38,11 +39,11 @@
         </section>
 
 
-        <section class="services">
+        <section class="services" id="section2">
         <div class="services_1"> 
             <div class="header_section-services">
                 <div class="header_logo_section">
-                    <img src="assets/logo_text_nobg.png" alt="">
+                    <a href="#"><img src="assets/logo_text_nobg.png" alt=""></a>
                 </div>
                 <h1>L'ENTRETIEN DE VOTRE JARDIN</h1>
             </div>
@@ -77,7 +78,7 @@
         <div class="services_2"> 
             <div class="header_section-services">
                 <div class="header_logo_section">
-                    <img src="assets/logo_text_nobg.png" alt="">
+                    <a href="#"><img src="assets/logo_text_nobg.png" alt=""></a>
                 </div>
                 <h1>CREATION & TRANSFORMATION DE VOTRE JARDIN</h1>
             </div>
@@ -113,7 +114,7 @@
         <div class="services_3"> 
             <div class="header_section-services">
                 <div class="header_logo_section">
-                    <img src="assets/logo_text_nobg.png" alt="">
+                    <a href="#"><img src="assets/logo_text_nobg.png" alt=""></a>
                 </div>
                 <h1>ELAGAGE ET ABATTAGE</h1>
             </div>
@@ -152,11 +153,11 @@
         </section>
 
 
-        <section class="apropos">
+        <section class="apropos" id="section3">
                 <div class="header-apropos">
                     <div class="header_logo_section">
-                        <img src="assets/logo_text_nobg.png" alt="">
-                    </div>
+                    <a href="#"><img src="assets/logo_text_nobg.png" alt=""></a>
+                </div>
                     <h1>QUI SOMMES NOUS ?</h1>
                 </div>
                 
@@ -210,6 +211,8 @@
 
     </main>
 
-   
+ 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="js/scroll.js"></script>
 </body>
 </html>
