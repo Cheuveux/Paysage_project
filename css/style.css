@@ -15,6 +15,9 @@
     --title-font : 'Frunchysage',  sans-serif;
     --body-font : 'Lora', sans-serif;
 
+    --green-color: #6C8350;
+    --beige-color: #E0E0D5;
+
     -ms-overflow-style: none;  /* IE and Edge */
   scrollbar-width: none;  /* Firefox */
 }
@@ -48,7 +51,7 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #dbdbbc;
+    background-color: #E0E0D5;
 }
 
 .header_logo img{
@@ -176,7 +179,7 @@ header {
 .services_3 {
     position: relative;
     margin-bottom: 2rem;
-    height: 92vh;
+    height: 100vh;
 }
 .services_1-corpus, 
 .services_2-corpus,
@@ -218,7 +221,7 @@ header {
     padding: 15px 50px;
     border-radius: 14px;
    
-   background: linear-gradient(90deg, #6C8350 50%,  #8ede33 50%); /* Couleur initiale */
+   background: linear-gradient(90deg, #6C8350 50%,  var(--beige-color) 50%); /* Couleur initiale */
     background-size: 200% 100%; /* Double la largeur pour permettre l'animation */
     background-position: 0% 0%; /* Position initiale */
     transition: background-position 0.4s ease-in-out;
