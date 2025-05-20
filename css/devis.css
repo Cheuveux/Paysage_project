@@ -85,6 +85,7 @@ body {
 
 
     display: flex;
+    flex-direction: column;
     align-items: start;
     justify-content: start;
     font-family: var(--body-font);
@@ -92,29 +93,43 @@ body {
     
 }
 
+.main-container-header {
+    display: flex;
+    width: 100%;
+    height: fit-content;
+}
+
 .contact-form {
     position: relative;
  
-    margin-top: 3.7rem;
+    margin-top: 3.2rem;
     width: 100%;
+    height: min-content;
    
    display: flex; 
    flex-direction: column;
+   justify-content: start;
+   align-items: start;
    gap: 1rem;
 }
 .form-row {
     display: flex;
-    gap: 1rem;
+    gap: 2rem;
 }
 
 .form-row > div {
-    flex: 1;
+   flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem; /* espace entre label et input */
+    
 }
 .contact-form input[type="text"],
 .contact-form input[type="email"],
 .contact-form input[type="telephone"] {
     width: 100%;
     padding: 0.6rem;
+
     border-radius: 2px;
     border: 1px solid #000000;
     font-size: 1rem;
@@ -122,14 +137,43 @@ body {
 
     flex: 1;
 }
-.contact-form input[type="telephone"] {
+.message {
     width: 100%;
+}
+#message {
+    width: 100%;
+    min-width: 100%;
+    max-width: 100%;
+    /* Supprime overflow: scroll; */
+    resize: vertical;
+    min-height: 100px; 
 }
 
 .form-footer {
 
-    position: absolute;
-    bottom: 0%;
+    position: relative;
+   width: 100%;
+   
+    display: flex;
+   flex-direction: column;
+   justify-content: space-between;
 }
 
+.conditions {
+    position: relative;
+
+    margin-bottom: 2.5rem;
+}
+
+.envoyer {
+    position: absolute;
+    bottom: -50%;
+    right: 0%;
+}
+
+.envoyer button {
+    padding: 1rem 1.5rem;
+    color: #FFF;
+    background-color: var(--green-color);
+}
 
