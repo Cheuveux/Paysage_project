@@ -11,9 +11,9 @@
 
     <div class="devis-header">
                 <div class="devis-logo">
-                    <a href="#"><img src="assets/logo_text_nobg.png" alt=""></a>
+                    <a href="index.html"><img src="assets/logo_text_nobg.png" alt=""></a>
                 </div>
-                <h1 class="devis-titre">DEMANDER UN DEVIS</h1>
+                <h1 class="devis-titre">DEMANDER VOTRE DEVIS</h1>
             </div>
 
     <div class="main-container">
@@ -21,16 +21,30 @@
             <h2>Contactez-Nous</h2>
         
         <form class="contact-form" action="#" method="post">
-            <label for="nom">Nom :</label>
+        <div class="form-row">
+            
+             <label for="nom">Nom :</label>
             <input type="text" id="nom" name="nom" required>
 
             <label for="email">Email :</label>
             <input type="email" id="email" name="email" required>
+            
+            <label for="telephone">Telephone :</label>
+            <input type="telephone" id="telephone" name="telephone" required>
 
-            <label for="message">Message :</label>
-            <textarea id="message" name="message" rows="5" required></textarea>
+        </div>
+          
+             <label for="message">Message :</label>
+            <textarea id="message" name="message" rows="5" required placeholder="Décrivez-nous votre projet"></textarea>
+ 
+            <div class="form-footer"></div>
+            <button type="submit">Envoyer le message</button>
 
-            <button type="submit">Envoyer</button>
+             <input type="checkbox" name="accept" required>
+         *Champs obligatoires. En cochant cette case, j'accepte les conditions particulières ci-dessous
+            </label>
+            </div>
+          
         </form>
         </div>
     </div>
