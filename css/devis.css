@@ -166,14 +166,24 @@ body {
 }
 
 .envoyer {
-    position: absolute;
-    bottom: -50%;
-    right: 0%;
+  
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+  width: fit-content;
+
+
+     background: linear-gradient(90deg, #6C8350 50%,  var(--beige-color) 50%); /* Couleur initiale */
+    background-size: 200% 100%; /* Double la largeur pour permettre l'animation */
+    background-position: 0% 0%; /* Position initiale */
+    transition: background-position 0.4s ease-in-out;
 }
 
 .envoyer button {
     padding: 1rem 1.5rem;
     color: #FFF;
-    background-color: var(--green-color);
+  
+    border: none;
+
 }
 
