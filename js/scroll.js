@@ -3,19 +3,23 @@ gsap.registerPlugin(ScrollTrigger, ScrollSmoother, ScrollToPlugin);
 // Animation GSAP pour le défilement fluide des liens du menu
 document.querySelectorAll('.header_nav a').forEach(link => {
     link.addEventListener('click', (e) => {
-        e.preventDefault(); // Empêche le comportement par défaut du lien
-
-        const target = document.querySelector(link.getAttribute('href')); // Récupère la section cible
-        if (target) {
-            gsap.to(window, {
-                scrollTo: {
-                    y: target, // Cible la section
-                    offsetY: 50 // Décalage pour éviter que le contenu soit masqué par le header
-                },
-                duration: 1, // Durée de l'animation (en secondes)
-                ease: 'power2.inOut' // Courbe d'animation
-            });
+        const href = link.getAttribute('href');
+        // Si c'est une ancre interne, on empêche le comportement par défaut et on scroll
+        if (href && href.startsWith('#')) {
+            e.preventDefault();
+            const target = document.querySelector(href);
+            if (target) {
+                gsap.to(window, {
+                    scrollTo: {
+                        y: target,
+                        offsetY: 50
+                    },
+                    duration: 1,
+                    ease: 'power2.inOut'
+                });
+            }
         }
+        // Sinon (lien externe ou autre page), on laisse le comportement normal
     });
 });
 

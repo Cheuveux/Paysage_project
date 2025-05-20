@@ -5,7 +5,7 @@ document.querySelectorAll('.header_nav li').forEach(li => {
         gsap.to(li.querySelector('a'), {
             y: -8,
             fontWeight:"900",
-            fontSize:"1.6rem",
+            fontSize:"1.6srem",
             color: "#A8C686", // vert clair
             duration: 0.3,
             ease: "power2.out"
