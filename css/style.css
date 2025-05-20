@@ -68,8 +68,10 @@ header {
     align-items: center;
 }
 
-.header_nav  {
+.header_nav nav {
+    position: relative;
   width: 70vw;
+  height: 100%;
   text-align: center;
   display: flex;
   justify-content: center;
@@ -81,18 +83,21 @@ header {
  
 }
 .header_nav ul {
-
+    position: relative;
     list-style: none;
     display: flex;
-
+    
     gap: 150px;
     margin-top: 2rem;
 
 }
 
-.header_nav a {
+.header_nav a,
+.header_nav li  {
     text-decoration: none;
-     color: #E0E0D5;
+    color: #E0E0D5;
+    font-size: 1rem;
+
 }
 
 /*ACCUEIL*/
@@ -220,6 +225,7 @@ header {
    
     padding: 15px 50px;
     border-radius: 14px;
+    border: solid 0px #6C8350;
    
    background: linear-gradient(90deg, #6C8350 50%,  var(--beige-color) 50%); /* Couleur initiale */
     background-size: 200% 100%; /* Double la largeur pour permettre l'animation */
@@ -233,6 +239,7 @@ header {
     text-decoration: none;
     color: black;
     font-weight: 900;
+    font-size: 20px;
 }
 
 .services_1-img,

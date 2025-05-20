@@ -38,24 +38,6 @@ document.querySelectorAll('.header_logo_section a').forEach(logo => {
     });
 });
 
-// Animation GSAP pour les boutons de devis
-document.querySelectorAll('.devis_button').forEach(button => {
-    button.addEventListener('mouseenter', () => {
-        gsap.to(button, {
-            backgroundPosition: "100% 0%", 
-            duration: 0.3, // Durée de l'animation
-            ease: "power1.inOut"
-        });
-    });
-
-    button.addEventListener('mouseleave', () => {
-        gsap.to(button, {
-            backgroundPosition: "0% 0%", // Retour à l'état initial
-            duration: 0.5,
-            ease: "power1.inOut"
-        });
-    });
-});
 
 
 /*Animation au scroll des éléments de la sections services*/
@@ -69,72 +51,61 @@ document.querySelectorAll('.devis_button').forEach(button => {
                 end : "top -50%",
                 toggleActions: "play reverse play reverse"
             },
-            opacity: 0,
+             opacity: 0,
             y: -200,
             x: -400,
             duration: 1.2,
             ease: "power3.out"
         });
     });
-    gsap.from(".services_1-text", {
-        scrollTrigger: {
-            trigger: ".services_1",
-            toggleActions: "play reverse play reverse"
-        },
-        opacity: 0.5,
-        x: -300,
-    
-       
-        delay: 1,
-        ease: "power3.out"
-    });
+  
 
     gsap.from(".services_1-img", {
         scrollTrigger: {
-            trigger: ".services_1",
+            trigger: ".services_1-img",
+            end : "bottom 10%",
             toggleActions: "play reverse play reverse"
-        
+            
         },
-        opacity: 0.5,
+     
+        opacity: 0,
         x: 200,
-        duration: 1,
+      
+        duration: 1.5,
         ease: "power3.out"
     });
 
 
-gsap.from(".header_section-services .services_2", {
-    scrollTrigger: {
-        trigger: ".services_2",
-        start: "top 120%", // quand le haut de .services_1 atteint 80% du viewport
-        toggleActions: "play reverse play reverse"
-    },
-    opacity: 0.5,
-    x: 200,
-    y: 100,
-    duration: 1.2,
-    ease: "power3.out"
-});
 
-gsap.from(".services_2-text", {
-    scrollTrigger: {
-        trigger: ".services_2",
-        toggleActions: "play reverse play reverse"
-    },
-    opacity: 0.5,
-    x: -200,
-   
-    duration: 1.5,
-    ease: "power3.out"
-});
 
 gsap.from(".services_2-img", {
-    scrollTrigger: {
-        trigger: ".services_2",
-        toggleActions: "play reverse play reverse"
+     scrollTrigger: {
+            trigger: ".services_2-img",
+            end : "bottom 10%",
+            toggleActions: "play reverse play reverse"
+            
+        },
+        opacity: 0,
+        x: 200,
+      
+        duration: 1.5,
+        ease: "power3.out"
+});
+
+   
+
+
+gsap.from(".services_3-img", {
+     scrollTrigger: {
+            trigger: ".services_3-img",
+    
+            toggleActions: "play reverse play reverse"
+            
+        },
      
-    },
-    opacity: 0.5,
-    x: 200,
-    duration: 1,
-    ease: "power3.out"
+        opacity: 0,
+        x: 200,
+      
+        duration: 1.5,
+        ease: "power3.out"
 });
