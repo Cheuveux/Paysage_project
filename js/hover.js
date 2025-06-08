@@ -5,7 +5,7 @@ document.querySelectorAll('.header_nav li').forEach(li => {
         gsap.to(li.querySelector('a'), {
             y: -8,
             fontWeight:"900",
-            fontSize:"1.3rem",
+            fontSize:"1.5rem",
             color: "#A8C686", // vert clair
             duration: 0.3,
             ease: "power2.out"
@@ -13,7 +13,7 @@ document.querySelectorAll('.header_nav li').forEach(li => {
     });
     li.addEventListener('mouseleave', () => {
         gsap.to(li.querySelector('a'), {
-            fontSize:"1rem",
+            fontSize:"1.3rem",
             y: 0,
             color: "#E0E0D5", // couleur d'origine
             duration: 0.3,
