@@ -125,12 +125,16 @@ body {
         width: 100%;
        
     }
+
+     section {
+        padding-top: 12vh;
+     }
     .header_ordi {
         display: none;
     }
     .header_bigo {
        display: flex;
-        height: 15vh;
+        height: 12vh;
         width: 100%;
         position: fixed;   /* Fixe le header mobile */
         top: 0;
@@ -526,6 +530,7 @@ body {
 .services_2,
 .services_3 {
     position: relative;
+   
     margin-bottom: 2rem;
     height: 100%;
     width: 100vw;
