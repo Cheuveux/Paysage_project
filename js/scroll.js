@@ -56,8 +56,8 @@ document.querySelectorAll('.header_logo_section a').forEach(logo => {
                 toggleActions: "play reverse play reverse"
             },
              opacity: 0,
-            y: -200,
-            x: -400,
+            y: -20,
+            x: -40,
             duration: 1.2,
             ease: "power3.out"
         });
@@ -73,7 +73,7 @@ document.querySelectorAll('.header_logo_section a').forEach(logo => {
         },
      
         opacity: 0,
-        x: 200,
+        x: 80,
       
         duration: 1.5,
         ease: "power3.out"
@@ -90,7 +90,7 @@ gsap.from(".services_2-img", {
             
         },
         opacity: 0,
-        x: 200,
+        x: 20,
       
         duration: 1.5,
         ease: "power3.out"
@@ -108,7 +108,7 @@ gsap.from(".services_3-img", {
         },
      
         opacity: 0,
-        x: 200,
+        x: 20,
       
         duration: 1.5,
         ease: "power3.out"
