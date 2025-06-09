@@ -1,2 +1,2 @@
 # Paysage_project
-(à compléter soon)
+Site vitrine pour entreprise de paysagisme "Backemba-Paysage"
