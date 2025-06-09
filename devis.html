@@ -4,17 +4,53 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/devis.css">
     <title>Devis</title>
 </head>
 <body>
 
-    <div class="devis-header">
-                <div class="devis-logo">
-                    <a href="index.html"><img src="assets/logo_text_nobg.png" alt=""></a>
-                </div>
-                <h1 class="devis-titre">DEMANDER VOTRE DEVIS</h1>
-            </div>
+    <header>
+
+    <div class="header_ordi">
+         <div class="header_logo">
+            <img src="assets/logo_text_nobg.png" alt="">
+        </div>
+
+        <div class="header_nav">
+            <nav>
+                <ul>
+                    <li><a href="#section2">SERVICES</a></li>
+                    <li><a href="#section3">A PROPOS</a></li>
+                    <li><a href="devis.html">DEVIS</a></li>
+
+                </ul>
+            </nav>
+        </div>
+    </div>
+
+<div class="header_bigo">
+    <div class="drawer-hamburger" id="drawerHamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+    <div class="header_logo_bigo">
+         <img src="assets/logo_text_nobg.png" alt="">
+    </div>
+    <div class="drawer-menu" id="drawerMenu">
+       
+        <ul>
+            <li><a href="#section2">SERVICES</a></li>
+            <li><a href="#section3">A PROPOS</a></li>
+            <li><a href="devis.html">DEVIS</a></li>
+        </ul>
+    </div>
+</div>
+
+    </header>
+   <main>
+
 
     <div class="main-container">
         <div class="main-container-header">
@@ -46,6 +82,7 @@
  
         </div>
 
+
     <div class="form-footer">
 
        
@@ -65,8 +102,8 @@
     </div>
         </form>
          
-   
-    </div>
+</main>
+  
     
 
 
@@ -80,5 +117,6 @@
 
     
     <script src="js/hover.js"></script>
+    <script src="js/headerBigo.js"></script>
 </body>
 </html>
