@@ -41,12 +41,15 @@ body {
 
 
 
+
 /*SECTION HEADER ORDI*/
 .header_bigo {
     display: none;
 }
 .header_ordi {
     display: flex;
+    position: relative;
+    top: 10;
     width: 100%;
     height: 12vh;
 
@@ -120,16 +123,20 @@ body {
     main {
         height: 100%;
         width: 100%;
+       
     }
     .header_ordi {
         display: none;
     }
     .header_bigo {
-        display: flex;
-        height: 10vh;
+       display: flex;
+        height: 15vh;
         width: 100%;
-        position: relative;
-        z-index: 3000;
+        position: fixed;   /* Fixe le header mobile */
+        top: 0;
+        left: 0;
+        z-index: 4000;
+        background: #fff;
     }
     .drawer-hamburger {
         display: flex;
