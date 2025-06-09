@@ -166,6 +166,20 @@ section {
         transform: rotate(-45deg) translate(7px, -7px);
     }
 
+    .header_logo_bigo {
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        margin-top: .5rem;
+        
+    }
+    .header_logo_bigo img{
+        
+        width: 100px;
+        height: 100px;
+
+    }
+
     .drawer-menu {
         display: none;
         flex-direction: column;
