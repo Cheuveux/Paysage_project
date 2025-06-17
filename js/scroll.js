@@ -6,12 +6,16 @@ gsap.registerPlugin(ScrollTrigger, ScrollToPlugin);
 // Scroll fluide pour le logo mobile
 document.querySelectorAll('.header_logo_bigo a').forEach(logo => {
     logo.addEventListener('click', (e) => {
-        e.preventDefault();
-        gsap.to(window, {
-            scrollTo: {y: 0},
-            duration: 1,
-            ease: 'power2.inOut'
-        });
+        const href = logo.getAttribute('href');
+        if (href === "#") {
+            e.preventDefault();
+            gsap.to(window, {
+                scrollTo: {y: 0},
+                duration: 1,
+                ease: 'power2.inOut'
+            });
+        }
+        // Sinon, laisse le comportement normal (changement de page)
     });
 });
 document.querySelectorAll('.header_logo_section a').forEach(logo => {
