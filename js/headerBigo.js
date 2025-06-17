@@ -41,9 +41,24 @@ if (hamburger && drawer && leaf) {
         hamburger.classList.remove('active');
     });
 
-    // Fermer le menu quand on clique sur un lien
+    // Fermer le menu et scroll fluide quand on clique sur un lien
     drawer.querySelectorAll('a').forEach(link => {
-        link.addEventListener('click', () => {
+        link.addEventListener('click', (e) => {
+            const href = link.getAttribute('href');
+            if (href && href.startsWith('#')) {
+                e.preventDefault();
+                const target = document.querySelector(href);
+                if (target) {
+                    gsap.to(window, {
+                        scrollTo: {
+                            y: target,
+                            offsetY: 50 // ajuste selon la hauteur de ton header
+                        },
+                        duration: 1,
+                        ease: 'power2.inOut'
+                    });
+                }
+            }
             drawer.style.display = 'none';
             leaf.classList.remove('visible');
             setTimeout(() => {
