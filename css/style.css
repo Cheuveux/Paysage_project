@@ -207,6 +207,7 @@ body {
     height: 48px;
     z-index: 3200;
     cursor: pointer;
+    object-fit: cover;
 
     background: rgba(255,255,255,0.85);
         border-radius: 50%;
