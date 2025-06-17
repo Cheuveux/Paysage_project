@@ -139,20 +139,34 @@ body {
     .header_ordi {
         display: none;
     }
-    .header_bigo {
-       display: flex;
-        height: auto;
-       
-        width: 100%;
-
-        position: fixed;   /* Fixe le header mobile */
+.header_bigo {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        position: fixed;
         top: 0;
         left: 0;
+        width: 100%;
         z-index: 4000;
-
         background: #fff;
         box-sizing: border-box;
-      
+    }
+
+    .header_logo_bigo {
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        margin-top: 0rem;
+        margin-bottom: 0rem;
+        
+    }
+    .header_logo_bigo img{
+        
+        width: 90px;
+        height: 90px;
+
     }
     .drawer-hamburger {
         display: flex;
@@ -164,8 +178,8 @@ body {
         cursor: pointer;
         z-index: 3100;
         position: relative;
-        top: 1.5rem;
-        left: 2rem;
+        top: 0rem;
+        left: 1rem;
         background: rgba(255,255,255,0.85);
         border-radius: 50%;
         box-shadow: 0 2px 12px rgba(108,131,80,0.10);
@@ -230,20 +244,7 @@ body {
     }
 }
 
-    .header_logo_bigo {
-        display: flex;
-        width: 100%;
-        justify-content: center;
-        margin-top: 0rem;
-        margin-bottom: 0rem;
-        
-    }
-    .header_logo_bigo img{
-        
-        width: 90px;
-        height: 90px;
-
-    }
+    
 
 
 
