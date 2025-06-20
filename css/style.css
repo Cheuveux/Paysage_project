@@ -883,7 +883,7 @@ body {
 @media screen and (max-width:525px) {
     .apropos {
     padding-top: 3vh;
-    min-height: fit-content;
+    height: fit-content;
     width: auto;
     background-color: #E0E0D5;
     position: relative;
@@ -917,7 +917,7 @@ body {
     position: relative;
     width: 100%;
     
-    height: 100vh;
+    height: 100%;
 
       display: flex;
     flex-direction: row;
@@ -1029,8 +1029,8 @@ body {
 
 .apropos-footer {
     width: 100%;
-    bottom: 0%;
-    position: absolute;
+
+    position: relative;
      display: flex;
     justify-content: center;
     align-items: center;
