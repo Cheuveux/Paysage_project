@@ -2,6 +2,16 @@ document.addEventListener('DOMContentLoaded', function() {
   
 gsap.registerPlugin(ScrollTrigger, ScrollToPlugin);
 
+   // Animation d'apparition du main après chargement
+    gsap.set('main', {opacity: 0, y: 40});
+    window.addEventListener('load', () => {
+        gsap.to('main', {
+            opacity: 1,
+            y: 0,
+            duration: 1.5,
+            ease: "power2.out"
+        });
+    });
 
 // Scroll fluide pour le logo mobile
 document.querySelectorAll('.header_logo_bigo a').forEach(logo => {

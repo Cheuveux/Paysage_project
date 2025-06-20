@@ -39,11 +39,15 @@
         <span></span>
         <span></span>
         <span></span>
+
+         
     </div>
+    <img src="assets/logo_transparent.png" alt="Menu ouvert" class="drawer-leaf" id="drawerLeaf" style="display:none;" />
+   
     <div class="header_logo_bigo">
-        <a href="index.html">
-             <img src="assets/logo_text_nobg.png" alt="">
-        </a>
+         <a href="index.html">
+            <img src="assets/logo_text_nobg.png" alt="">
+         </a>
     </div>
     <div class="drawer-menu" id="drawerMenu">
        
@@ -64,7 +68,7 @@
             <h2>Contactez-Nous</h2>
         </div>
         
-        <form class="contact-form" action="#" method="post">
+        <form class="contact-form" id="contactForm" action="#" method="post">
         <div class="form-row">
             
             <div class="nom">
@@ -120,5 +124,12 @@
 <script src="js/scroll.js"></script>
 <script src="js/hover.js"></script>
 <script src="js/headerBigo.js"></script>
+<script src="js/emailcontact.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+<script>
+  (function(){
+    emailjs.init("VOTRE_USER_ID"); // Remplace par ton User ID EmailJS
+  })();
+</script>
 </body>
 </html>
