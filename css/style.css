@@ -965,7 +965,7 @@ body {
     flex-direction: row;
     align-items: flex-start; /* aligne en haut */
     justify-content: flex-start;
-    gap: 16px; /* espace entre texte et illu */
+    gap: 36px; /* espace entre texte et illu */
     box-sizing: border-box;
     overflow-x: hidden;
 }
@@ -1038,12 +1038,13 @@ body {
 .apropos-illu {
     display: flex;
     flex-direction: column;
-    gap: 5px;
+    gap: 50px;
     width: fit-content;
     height: 100%;
    
     align-items: start;
-    margin-top: 25px;
+    justify-content: space-around;
+    margin-top: 10px;
       margin-left: 25px;
 
 }
@@ -1061,20 +1062,19 @@ body {
     
 }
 .apropos-img1 {
-  width: 111px; 
+  width: 131px; 
 
     
 }
 .apropos-img2 {
-  width: 111px; 
-  margin-top: 120px;
-  margin-left: 20px;
+  width: 131px; 
+ 
     
 }
 .apropos-img3 {
   width: 131px; 
-  margin-top: 140px;
-  margin-left: 0px;  
+   margin-top: 100px;
+ 
 }
 
 
@@ -1096,7 +1096,7 @@ body {
 
     border-radius: 20px;
     margin-left: 0px;
-    margin-top: 20px;
+  
 
    
      
@@ -1107,7 +1107,7 @@ body {
     display: block;
 
     border-radius: 20px;
-     margin-top: 0px;
+    
    
    
      
