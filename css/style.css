@@ -790,16 +790,17 @@ body {
     max-width: 100%;
 }
 
+.transi {
+    text-align: center;
+    font-style: italic;
+    font-size: 1.5rem;
+    letter-spacing: 2px;
+}
+
 .apropos-paragraphe1 {
     width: 80vw;
 }
-.apropos-paragraphe1 p:last-child{
-    text-align: center;
-    gap: 5px;
-    letter-spacing: 2px;
-    font-style: italic;
-    font-size: 1.3rem;
-}
+
 .apropos-paragraphe1 {
     width: 80vw;
 }
@@ -828,14 +829,7 @@ body {
     width: 70vw;
     margin-bottom: 1rem;
 }
-.apropos-paragraphe2 p:last-child{
-    text-align: center;
-    gap: 5px;
-    letter-spacing: 2px;
-    font-style: italic;
-    font-size: 1.3rem;
-    margin: 3rem 0rem;
-}
+
 .apropos-img2 {
   width: 181px; 
     
@@ -880,6 +874,8 @@ body {
     width: 100%;
     text-align: center;
     font-size: 2rem;
+    font-style: italic;
+    letter-spacing: 2px;
 }
 
 
@@ -1003,15 +999,7 @@ body {
 .apropos-paragraphe1 p:nth-child(2){
 display: none;
 }
-.apropos-paragraphe1 p:last-child{
-    width: 100%;
-    text-align: center;
-    gap: 5px;
-    letter-spacing: 2px;
-    font-style: italic;
-    font-size: 1.2rem;
-   
-}
+
 .apropos-paragraphe1 {
     width: 100%;
     max-width: 100%;
@@ -1021,6 +1009,7 @@ display: none;
 
 .apropos-img1 {
   width: 131px; 
+  margin-top: 20px;
 
 }
 
@@ -1112,6 +1101,7 @@ display: none;
      display: flex;
     justify-content: center;
     align-items: center;
+     text-align: center;
 }
 .Mdevis_button {
    
@@ -1125,77 +1115,21 @@ display: none;
 }
 
 .Mdevis_button a{
-    text-decoration: none;
-    color: white;
-    font-weight: 600;
-    font-size: 2rem;
-
-
-   
-}
-
-
-
-.apropos-footer {
-   
-    width: 100%;
-  
-     display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.Mdevis_button {
-   
-    margin: 3rem 0;
-    width: fit-content;
-     padding:20px 5rem;
-     background-color: #6C8350;
-     border-radius: 10px;
-     border: solid white 5px;
-
-}
-
-.Mdevis_button a{
-    text-decoration: none;
-    color: white;
-    font-weight: 600;
-    font-size: 2rem;
-
-
-   
-}
-
-
-.apropos-footer {
-    width: 100%;
-
-    position: relative;
-     display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.Mdevis_button {
-   
-   
-    width: 100%;
-     padding:20px 5rem;
-     background-color: #6C8350;
-     border-radius: 10px;
-     border: solid white 5px;
-      text-align: center;
-
-}
-
-.Mdevis_button a{
-    width: 100%;
     text-decoration: none;
     color: white;
     font-weight: 600;
     font-size: 1.5rem;
+   
 
- 
+
+   
 }
+
+
+
+
+
+
 
 }
 
