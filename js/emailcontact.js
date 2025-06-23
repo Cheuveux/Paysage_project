@@ -4,7 +4,7 @@ document.addEventListener('DOMContentLoaded', function() {
         form.addEventListener('submit', function(e) {
             e.preventDefault();
 
-            emailjs.sendForm('VOTRE_SERVICE_ID', 'VOTRE_TEMPLATE_ID', this)
+            emailjs.sendForm('service_3o1n86y', 'template_7kw2vbp', this)
                 .then(function() {
                     alert('Message envoyé avec succès !');
                     form.reset();
