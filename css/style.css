@@ -209,19 +209,18 @@ body {
         transition: all 0.3s;
     }
   .drawer-leaf {
-    width: 40px;
-    height: 40px;
+  
   
     opacity: 0;
     transform: scale(0.7) rotate(-20deg);
     transition: opacity 0.4s, transform 0.4s;
     position: absolute;
     left: 1rem;
-    width: 48px;   /* même taille que le hamburger */
-    height: 48px;
+    width: 58px;   /* même taille que le hamburger */
+    height: 50px;
     z-index: 3200;
     cursor: pointer;
-    object-fit: cover;
+    object-fit: fill;
 
     background: rgba(255,255,255,0.85);
         border-radius: 50%;
@@ -232,6 +231,16 @@ body {
     opacity: 1;
     transform: scale(1) rotate(0deg);
 }
+
+.drawer-leaf img,
+.drawer-leaf svg {
+    width: 100%;
+    height: 100%;
+    object-fit: contain; /* ou cover selon le rendu souhaité */
+    display: block;
+}
+
+
 
     .drawer-menu {
         display: none;
