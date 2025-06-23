@@ -953,7 +953,7 @@ body {
 
     margin: 0rem 1rem;
 
-    font-size: 13px;
+    font-size: 15px;
 
    
     position: relative;
@@ -1068,12 +1068,13 @@ body {
 }
 .apropos-img2 {
   width: 131px; 
+   margin-top: 50px;
  
     
 }
 .apropos-img3 {
   width: 131px; 
-   margin-top: 100px;
+   margin-top: 150px;
  
 }
 
