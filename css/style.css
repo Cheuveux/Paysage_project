@@ -951,7 +951,8 @@ body {
 
 .apropos-corpus {
 
-    margin: 0rem 1rem;
+   margin: 0;
+   margin-left: 10px;
 
     font-size: 15px;
 
@@ -1045,7 +1046,7 @@ body {
     align-items: start;
     justify-content: space-around;
     margin-top: 10px;
-      margin-left: 25px;
+      margin-left: 5px;
 
 }
 
