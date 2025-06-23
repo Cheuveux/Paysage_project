@@ -1034,14 +1034,7 @@ display: none;
     width: 80vw;
     margin-bottom: 1rem;
 }
-.apropos-paragraphe2 p:last-child{
-    text-align: start;
-    gap: 5px;
-    letter-spacing: 1px;
-    font-style: normal;
-    font-size: 15px;
-    margin-left: 10px;
-}
+
 .apropos-img2 {
   width: 181px; 
     display: flex;
