@@ -753,137 +753,134 @@ body {
 
 .apropos-corpus {
     display: flex;
-    gap: 1px;
+    flex-direction: column;
     position: relative;
-    margin:  1rem 3rem;
+    margin:  1rem 1rem;
 
-    font-size: 1.2rem;
+    font-size: 1.3rem;
      font-weight: 700;
+     
+
+    width: 100%;
+    max-width: 100vw;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    display: flex;
+    gap: 16px; /* ou moins */
+    padding: 0 8px; /* optionnel, pour éviter que le contenu touche les bords */
    
 }
 
-.apropos-text p {
-    line-height: 1.1;
+
+ .apropos-text  p{
     display: flex;
     flex-direction: column;
-    width: 100%;
+  
+    width: 50vw;
     margin-bottom: 30px;
-
-}
-.apropos-text p:first-child,
-.apropos-text p:nth-child(2),
-.apropos-text p:nth-child(3)
-{
-
-    width: 70vw;
-   
 }
 
-.apropos-text p:nth-child(4),
-.apropos-text p:nth-child(5)
- {
-    width: 65vw;
+
+.apropos-paragraphe {
+    margin: 1rem 1rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    max-width: 100%;
 }
-.apropos-text p:nth-child(6) {
+
+.apropos-paragraphe1 {
+    width: 80vw;
+}
+.apropos-paragraphe1 p:last-child{
+    text-align: center;
+    gap: 5px;
+    letter-spacing: 2px;
+    font-style: italic;
+    font-size: 1.3rem;
+}
+.apropos-paragraphe1 {
     width: 80vw;
 }
 
 
 
-.apropos-text p:nth-child(3) {
-    margin: 3rem 2rem;
-    text-align: center;
-}
-
-
-.apropos-text p:nth-child(5) {
-    margin: 3rem 2rem;
-   
-}
 
 
 
-.apropos-text p:last-child {
-    width: 100%;
-    text-align: center;
-    margin: 3rem;
-    font-size: 2rem;
-    font-style: italic;
-}
-
-.apropos-illu {
-    display: flex;
-    flex-direction: column;
-    gap: 8px;
-    width: 100%;
-    height: 100%;
-   
-    align-items: start;
-
-}
-
-.apropos-img1
-.apropos-img2,
-.apropos-img3 {
-  
-    height: auto;
-    position: relative;
-    align-self: flex-start;
-
-
-   
-    
-}
 .apropos-img1 {
-  width: 151px; 
-    
-}
-.apropos-img2 {
-  width: 151px; 
-    
-}
-.apropos-img3 {
-  width: 181px; 
-    
-}
+  width: 221px; 
 
-
+}
 
 .apropos-img1 > img {
     width: 100%;
     height: 100%;
     display: block;
-    margin-left: -50px;
+   
     border-radius: 20px;
    
      
 }
+
+.apropos-paragraphe2 {
+    width: 70vw;
+    margin-bottom: 1rem;
+}
+.apropos-paragraphe2 p:last-child{
+    text-align: center;
+    gap: 5px;
+    letter-spacing: 2px;
+    font-style: italic;
+    font-size: 1.3rem;
+    margin: 3rem 0rem;
+}
+.apropos-img2 {
+  width: 181px; 
+    
+}
+
 .apropos-img2 > img {
     width: 100%;
     height: 100%;
     display: block;
-    object-fit: fill;
-
-    border-radius: 20px;
-    margin-left: -170px;
-    margin-top: 20px;
-
    
+
+    border-radius: 20px; 
      
 }
+
+.apropos-paragraphe3 {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+    margin: 2rem 0rem;
+    gap: 2rem;
+    width: 100%;
+}
+
+
+.apropos-img3 {
+  width: 221px; 
+    
+}
+
+
 .apropos-img3 > img {
     width: 100%;
     height: 100%;
     display: block;
 
     border-radius: 20px;
-     margin-top: -50px;
-   
-   
      
 }
 
-
+.apropos-paragraphe4 {
+    width: 100%;
+    text-align: center;
+    font-size: 2rem;
+}
 
 
 
@@ -949,173 +946,193 @@ body {
     
 }
 
+
+
 .apropos-corpus {
-
-   margin: 0;
-   margin-left: 10px;
-
-    font-size: 15px;
-
-   
-    position: relative;
-    max-width: 100%;
-   
-    height: 100%;
-
-      display: flex;
-    flex-direction: row;
-    align-items: flex-start; /* aligne en haut */
-    justify-content: flex-start;
-    gap: 36px; /* espace entre texte et illu */
-    box-sizing: border-box;
-    overflow-x: hidden;
-}
-
-.apropos-text {
-   
-    max-width: 50%;
-    overflow-wrap: break-word;
-    word-break: break-word;
-    height: 100%;
-}
-
-
-
-.apropos-text p {
-   line-height: 1;
-   margin-bottom: 7px;
-   width: 100%;
-}
-
-.apropos-text p:nth-child(2) {
-    display: none;
-}
-.apropos-text p:first-child,
-.apropos-text p:nth-child(3)
- {
-
-    width: 50vw;
-   
-   
-}
-
-
-
-.apropos-text p:nth-child(3) {
- 
-    margin: 2rem;
-    text-align: center;
-    font-style: italic;
-    font-size: 1rem;
-}
-
-.apropos-text p:nth-child(4),
-.apropos-text p:nth-child(5),
-.apropos-text p:nth-child(6) {
-    width: 50vw;
-}
-
-.apropos-text p:nth-child(5) {
-    margin-left: 2rem;
-     font-style: italic;
-    font-size: 1rem;
-
-}
-
-
-
-.apropos-text p:last-child {
-   
-    width: 100vw;
-
-    text-align: center;
-    margin: 3rem 0;
-    font-size: 1.2rem;
-    font-style: italic;
-}
-
-
-
-.apropos-illu {
     display: flex;
     flex-direction: column;
-    gap: 50px;
-    width: fit-content;
-    height: 100%;
-   
-    align-items: start;
-    justify-content: space-around;
-    margin-top: 10px;
-      margin-left: 5px;
-
-}
-
-.apropos-img1
-.apropos-img2,
-.apropos-img3 {
-  
-    height: auto;
     position: relative;
-    align-self: flex-start;
+    margin:  1rem 0rem;
 
+    font-size: 15px;
+     font-weight: 700;
+     
 
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    display: flex;
+    gap: 16px; /* ou moins */
    
-    
+   
 }
+
+
+  .apropos-paragraphe .apropos-text  p{
+    display: flex;
+    flex-direction: column;
+  
+    width: 50vw;
+    margin-bottom: 10px;
+    margin-left: 10px;
+}
+
+
+.apropos-paragraphe {
+    margin: 0.5rem 0rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: start;
+    width: 100%;
+    max-width: 100%;
+}
+
+.transi {
+    text-align: center;
+    font-style: italic;
+    font-size: 16px;
+    letter-spacing: 2px;
+}
+
+
+
+.apropos-paragraphe1 {
+    width: 100%;
+}
+.apropos-paragraphe1 p:nth-child(2){
+display: none;
+}
+.apropos-paragraphe1 p:last-child{
+    width: 100%;
+    text-align: center;
+    gap: 5px;
+    letter-spacing: 2px;
+    font-style: italic;
+    font-size: 1.2rem;
+   
+}
+.apropos-paragraphe1 {
+    width: 100%;
+    max-width: 100%;
+}
+
+
+
 .apropos-img1 {
   width: 131px; 
 
-    
 }
-.apropos-img2 {
-  width: 131px; 
-   margin-top: 50px;
- 
-    
-}
-.apropos-img3 {
-  width: 131px; 
-   margin-top: 150px;
- 
-}
-
-
 
 .apropos-img1 > img {
     width: 100%;
     height: 100%;
     display: block;
-    margin-left: 0px;
+   
     border-radius: 20px;
    
      
 }
+
+.apropos-paragraphe2 {
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+}
+
+.apropos-paragraphe2 .apropos-text{
+    width: 80vw;
+    margin-bottom: 1rem;
+}
+.apropos-paragraphe2 p:last-child{
+    text-align: start;
+    gap: 5px;
+    letter-spacing: 1px;
+    font-style: normal;
+    font-size: 15px;
+    margin-left: 10px;
+}
+.apropos-img2 {
+  width: 181px; 
+    display: flex;
+    justify-content: center;
+    margin-top: 80px;
+}
+
 .apropos-img2 > img {
     width: 100%;
     height: 100%;
     display: block;
-    object-fit: fill;
-
-    border-radius: 20px;
-    margin-left: 0px;
-  
-
    
+
+    border-radius: 20px; 
      
 }
+
+.apropos-paragraphe3 {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+    margin: 2rem 0rem;
+    gap: 2rem;
+    width: 100%;
+}
+
+
+.apropos-img3 {
+  width: 201px; 
+    
+}
+
+
 .apropos-img3 > img {
     width: 100%;
     height: 100%;
     display: block;
 
     border-radius: 20px;
-    
-   
-   
      
 }
 
+.apropos-paragraphe4 {
+    width: 100%;
+    text-align: center;
+    font-size: 1.5rem;
+    font-style: italic;
+    letter-spacing: 2px;
+}
 
+
+
+.apropos-footer {
+   
+    width: 100%;
+  
+     display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.Mdevis_button {
+   
+    margin: 3rem 0;
+    width: fit-content;
+     padding:20px 5rem;
+     background-color: #6C8350;
+     border-radius: 10px;
+     border: solid white 5px;
+
+}
+
+.Mdevis_button a{
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+    font-size: 2rem;
+
+
+   
+}
 
 
 

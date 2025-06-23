@@ -181,38 +181,20 @@ gsap.from(".services_3-img", {
 
 /*Animation au scroll des éléments de la section apropos*/
 
-gsap.from(
-  ".apropos-text p",
-  {
-    scrollTrigger: {
-      trigger: ".apropos-text",
-      start: "top 80%",
-      toggleActions: "play reverse play reverse"
-    },
-    opacity: 0,
-    y: 40,
-    stagger: 0.18,
-    duration: 0.8,
-    ease: "power2.out"
-  }
-);
-
-gsap.from(
-  ".apropos-illu > div",
-  {
-    scrollTrigger: {
-      trigger: ".apropos-illu",
-      start: "top 80%",
-      toggleActions: "play reverse play reverse"
-    },
-    opacity: 0,
-    y: 60,
-    stagger: 0.25,
-    duration: 1,
-    ease: "power2.out"
-  }
-);
-
+gsap.utils.toArray('.apropos-paragraphe').forEach((paragraphe, i) => {
+    gsap.from(paragraphe, {
+        scrollTrigger: {
+            trigger: paragraphe,
+            start: "top 85%",
+            toggleActions: "play reverse play reverse"
+        },
+        opacity: 0,
+        y: 40,
+        duration: 0.7,
+        ease: "power2.out",
+        delay: i * 0.15 // effet cascade entre les blocs
+    });
+});
 });
 
 
