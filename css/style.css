@@ -130,9 +130,10 @@ body {
 
 /*NAV BIGO*/
 
-@media screen and (max-width:525px) {
+@media screen and (max-width:725px) {
    html,body, main, .header_bigo {
         height: 100%;
+       max-width: 100%;
         width: 100%;
         box-sizing: border-box;
 
@@ -157,15 +158,18 @@ body {
         top: 0;
         left: 0;
         width: 100%;
+        max-width: 100%;
         height: 80px;
         z-index: 4000;
         background: #fff;
         box-sizing: border-box;
+
     }
 
     .header_logo_bigo {
         display: flex;
         width: 100%;
+        max-width: 100%;
         justify-content: center;
         align-items: center;
         margin-top: 0rem;
@@ -918,12 +922,13 @@ body {
 @media screen and (max-width:525px) {
     .apropos {
     padding-top: 3vh;
-    width: auto;
+    width: 100%;
     background-color: #E0E0D5;
     position: relative;
     display: flex;
     flex-direction: column;
     min-height: 80vh;
+   
 }
 .header-apropos {
     justify-content: center;
@@ -949,25 +954,26 @@ body {
     margin: 0rem 1rem;
 
     font-size: 13px;
-    font-style: 900;
+
    
     position: relative;
-    width: 100%;
-    
+    max-width: 100%;
+   
     height: 100%;
 
       display: flex;
     flex-direction: row;
     align-items: flex-start; /* aligne en haut */
     justify-content: flex-start;
-    gap: 2rem; /* espace entre texte et illu */
+    gap: 16px; /* espace entre texte et illu */
     box-sizing: border-box;
+    overflow-x: hidden;
 }
 
 .apropos-text {
-    width: 100%!important;
-    max-width: 100vw;
-   overflow-wrap: break-word;
+   
+    max-width: 50%;
+    overflow-wrap: break-word;
     word-break: break-word;
     height: 100%;
 }
@@ -979,31 +985,39 @@ body {
    margin-bottom: 7px;
    width: 100%;
 }
+
+.apropos-text p:nth-child(2) {
+    display: none;
+}
 .apropos-text p:first-child,
-.apropos-text p:nth-child(2),
 .apropos-text p:nth-child(3)
  {
 
     width: 50vw;
+   
    
 }
 
 
 
 .apropos-text p:nth-child(3) {
-    margin: 0;
-    margin-top: 4rem;
+ 
+    margin: 2rem;
     text-align: center;
+    font-style: italic;
+    font-size: 1rem;
 }
 
 .apropos-text p:nth-child(4),
 .apropos-text p:nth-child(5),
 .apropos-text p:nth-child(6) {
-    width: 90vw;
+    width: 50vw;
 }
 
 .apropos-text p:nth-child(5) {
     margin-left: 2rem;
+     font-style: italic;
+    font-size: 1rem;
 
 }
 
@@ -1011,60 +1025,127 @@ body {
 
 .apropos-text p:last-child {
    
-    width: 100%;
+    width: 100vw;
+
     text-align: center;
-    margin: 2rem 0;
-    font-size: 1rem;
+    margin: 3rem 0;
+    font-size: 1.2rem;
     font-style: italic;
 }
 
+
+
 .apropos-illu {
-    position: absolute;
-    width: fit-content;
-    top: 0%;
-    right: 0%;
-    height: fit-content;
-    align-self: flex-start; /* force l'illu en haut */
     display: flex;
     flex-direction: column;
-    align-items: center;
-}
-
-.apropos-img {
-    width: 131px;
-    height: auto;
-    margin-right: 1rem;
-   
-  
-
-    
-}
-
-.apropos-img > img  {
-    width: 100%;
+    gap: 5px;
+    width: fit-content;
     height: 100%;
+   
+    align-items: start;
+    margin-top: 25px;
+      margin-left: 25px;
 
-    border-radius: 20px;
-     
 }
 
-.apropos-img2 {
-    width: 181px;
-    margin-right: 20px;
+.apropos-img1
+.apropos-img2,
+.apropos-img3 {
+  
     height: auto;
     position: relative;
+    align-self: flex-start;
+
+
+   
     
+}
+.apropos-img1 {
+  width: 111px; 
 
     
 }
+.apropos-img2 {
+  width: 111px; 
+  margin-top: 120px;
+  margin-left: 20px;
+    
+}
+.apropos-img3 {
+  width: 131px; 
+  margin-top: 140px;
+  margin-left: 0px;  
+}
 
-.apropos-img2 > img  {
+
+
+.apropos-img1 > img {
     width: 100%;
     height: 100%;
-
+    display: block;
+    margin-left: 0px;
     border-radius: 20px;
+   
      
 }
+.apropos-img2 > img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: fill;
+
+    border-radius: 20px;
+    margin-left: 0px;
+    margin-top: 20px;
+
+   
+     
+}
+.apropos-img3 > img {
+    width: 100%;
+    height: 100%;
+    display: block;
+
+    border-radius: 20px;
+     margin-top: 0px;
+   
+   
+     
+}
+
+
+
+
+
+.apropos-footer {
+   
+    width: 100%;
+  
+     display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.Mdevis_button {
+   
+    margin: 3rem 0;
+    width: fit-content;
+     padding:20px 5rem;
+     background-color: #6C8350;
+     border-radius: 10px;
+     border: solid white 5px;
+
+}
+
+.Mdevis_button a{
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+    font-size: 2rem;
+
+
+   
+}
+
 
 .apropos-footer {
     width: 100%;
