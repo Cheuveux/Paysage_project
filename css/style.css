@@ -128,9 +128,21 @@ body {
     transition: border-bottom 1.2s;
 }
 
+
+@media screen and (max-width:1250px){
+    .header_nav ul {  
+    gap: 75px;
+}
+
+.header_nav a,
+.header_nav li  {
+    font-size: 1.2rem;
+}
+
+}
 /*NAV BIGO*/
 
-@media screen and (max-width:725px) {
+@media screen and (max-width:895px) {
    html,body, main, .header_bigo {
         height: 100%;
        max-width: 100%;
@@ -364,6 +376,11 @@ body {
     
 }
 
+@media  screen and (max-width:1250px) {
+    .slogan p{
+        font-size: 2rem;
+    }
+}
 
 
 @media  screen and (max-width:525px) {
@@ -436,6 +453,16 @@ body {
     align-items: center;
 }
 
+@media screen and (max-width:1100px) {
+    .header_logo_section {
+        width:12vw;
+    }
+    .header_logo_section img{
+    width: 100px;
+   
+}
+}
+
 @media  screen and (max-width:525px) {
     .header_logo_section {
 
@@ -461,6 +488,7 @@ body {
 .services_2,
 .services_3 {
     position: relative;
+    width: 100%;
     margin-bottom: 2rem;
     height: 100vh;
 }
@@ -474,9 +502,10 @@ body {
 
 .services h1 {
         margin-left: 4rem;
-        font-size: 3rem;
+        font-size: 3.2rem;
+        font-weight: 900;
         font-family: var(--title-font);
-        color: #6C8350;
+        color: #5c7b35;
         letter-spacing: 4px;
 }
 
@@ -592,10 +621,102 @@ body {
     object-fit: cover;
 }
 
+@media screen and (max-width:1300px){
+
+.services_1, 
+.services_2,
+.services_3 {
+    position: relative;
+    width: 100%;
+    margin-bottom: 2rem;
+    height: 80vh;
+}
+
+
+.services_1-img,
+.services_2-img,
+.services_3-img {
+    margin-right: 1rem;
+}
+
+/*SERVICES1*/
+
+.services_1-img {
+    position: absolute;
+    right: 2%;
+    top: 22%;
+    display: flex;
+    width: 370px;
+    height: 300px;
+
+}
+
+.services_1-img > img{
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+}
+
+
+/*SERVICES2*/
+
+.services_2-img {
+        position: absolute;
+        right: 0%;
+
+        display: flex;
+        width: 500px;
+        height: auto;
+
+}
+
+.services_2-img > img{
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+}
+/*SERVICES3*/
+
+.services_3-img {
+        position: absolute;
+        right: 0%;
+        top: 12%;
+
+        display: flex;
+        width: 500px;
+        height: auto;
+      
+
+}
+
+.services_3-img > img{
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+}
+}
+@media screen and (max-width:850px){
+ .services_1-text,
+.services_2-text,
+.services_3-text {
+    width: 40vw;
+    font-size: 1rem;
+ 
+   
+}
+.services_1-text p,
+.services_2-text p,
+.services_3-text p {
+    margin-bottom: 20px;
+}
+}
 
 /*SERVICES VERSION TEL*/
 
-@media screen and (max-width:525px) {
+@media screen and (max-width:625px) {
 .services_1, 
 .services_2,
 .services_3 {
@@ -737,6 +858,8 @@ body {
 
 /*A PROPOS*/
 
+
+
 .apropos {
     min-height: 95vh;
     background-color: #E0E0D5;
@@ -767,14 +890,14 @@ body {
     margin:  1rem 1rem;
 
     font-size: 1.3rem;
-     font-weight: 700;
+     font-weight: 100;
      
 
     width: 100%;
     max-width: 100vw;
     box-sizing: border-box;
     overflow-x: hidden;
-    display: flex;
+
     gap: 16px; /* ou moins */
     padding: 0 8px; /* optionnel, pour éviter que le contenu touche les bords */
    
@@ -782,14 +905,15 @@ body {
 
 
  .apropos-text  p{
-    display: flex;
-    flex-direction: column;
   
+   
     width: 50vw;
     margin-bottom: 30px;
 }
 
-
+span {
+    font-weight: 900;
+}
 .apropos-paragraphe {
     margin: 1rem 1rem;
     display: flex;
@@ -802,6 +926,7 @@ body {
 .transi {
     text-align: center;
     font-style: italic;
+    font-weight: 800;
     font-size: 1.5rem;
     letter-spacing: 2px;
 }
@@ -840,7 +965,7 @@ body {
 }
 
 .apropos-img2 {
-  width: 181px; 
+  width: 221px; 
     
 }
 
@@ -885,6 +1010,7 @@ body {
     font-size: 2rem;
     font-style: italic;
     letter-spacing: 2px;
+    font-weight: 900;
 }
 
 
@@ -905,6 +1031,7 @@ body {
      background-color: #6C8350;
      border-radius: 10px;
      border: solid white 5px;
+     text-align: center;
 
 }
 
