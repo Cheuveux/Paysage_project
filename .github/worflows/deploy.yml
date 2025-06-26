@@ -1,0 +1,23 @@
+name: 🚀 Deploy to OVH via FTP
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  ftp-deploy:
+    name: 📤 Upload to OVH FTP
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: ✅ Checkout repo
+        uses: actions/checkout@v3
+
+      - name: 📡 Deploy with FTP
+        uses: SamKirkland/FTP-Deploy-Action@v4
+        with:
+          server: ${{ secrets.FTP_SERVER }}
+          username: ${{ secrets.FTP_USERNAME }}
+          password: ${{ secrets.FTP_PASSWORD }}
+          local-dir: ./  # <-- dossier à déployer (modifie si nécessaire)
