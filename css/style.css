@@ -302,10 +302,12 @@ body {
         text-decoration: none;
         padding: 5px 0;
         box-sizing: border-box;
-        border-right: 3px #FFF solid;
-        border-left: 3px #FFF solid;
+        border-bottom: 4px solid #A8C66C; /* vert vif et épais */
+    border-radius: 0 0 8px 8px;
+    box-shadow: 0 4px 12px rgba(168,198,108,0.25);
+    background: linear-gradient(90deg, rgba(168,198,108,0.15) 0%, rgba(108,131,80,0.10) 100%);
+    letter-spacing: 1px;
 
-        border-radius: 7%;
     }
 }
 
@@ -1087,7 +1089,7 @@ span {
     margin:  1rem 0rem;
 
     font-size: 15px;
-     font-weight: 700;
+     font-weight: 300;
      
 
     width: 100%;
@@ -1102,8 +1104,7 @@ span {
 
 
   .apropos-paragraphe .apropos-text  p{
-    display: flex;
-    flex-direction: column;
+
   
     width: 50vw;
     margin-bottom: 10px;
