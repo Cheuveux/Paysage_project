@@ -130,6 +130,9 @@ body {
 
 
 @media screen and (max-width:1250px){
+    br {
+        display: none;
+    }
     .header_nav ul {  
     gap: 75px;
 }
@@ -455,7 +458,7 @@ body {
     align-items: center;
 }
 
-@media screen and (max-width:1100px) {
+@media screen and (max-width:1300px) {
     .header_logo_section {
         width:12vw;
     }
@@ -464,6 +467,8 @@ body {
    
 }
 }
+
+
 
 @media  screen and (max-width:525px) {
     .header_logo_section {
@@ -700,11 +705,11 @@ body {
     object-fit: cover;
 }
 }
-@media screen and (max-width:850px){
+@media screen and (max-width:1050px){
  .services_1-text,
 .services_2-text,
 .services_3-text {
-    width: 40vw;
+    width: 30vw;
     font-size: 1rem;
  
    
@@ -714,6 +719,68 @@ body {
 .services_3-text p {
     margin-bottom: 20px;
 }
+
+/*SERVICES1*/
+
+.services_1-img {
+    position: absolute;
+    right: 2%;
+    top: 25%;
+    display: flex;
+    width: 350px;
+    height: 300px;
+
+}
+
+.services_1-img > img{
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+}
+
+
+/*SERVICES2*/
+
+.services_2-img {
+        position: absolute;
+        right: 0%;
+        top: 25%;
+
+        display: flex;
+        width: 400px;
+        height: auto;
+
+}
+
+.services_2-img > img{
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+}
+/*SERVICES3*/
+
+.services_3-img {
+        position: absolute;
+        right: 2%;
+        top: 25%;
+
+        display: flex;
+        width: 400px;
+        height: auto;
+      
+
+}
+
+.services_3-img > img{
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+}
+
 }
 
 /*SERVICES VERSION TEL*/
@@ -1046,11 +1113,37 @@ span {
 
    
 }
+@media screen  and (max-width:1300px ){
+    .apropos-corpus {
+ 
 
+    font-size: 1.2rem;
+
+   
+   
+}
+.apropos-paragraphe2 {
+    width: 90vw;
+  
+   
+
+}
+}
+@media screen  and (max-width:1050px ){
+    .apropos-corpus {
+ 
+
+    font-size: 1.1rem;
+
+   
+   
+}
+
+}
 
 /*A PROPOS VERSION TEL*/
 
-@media screen and (max-width:525px) {
+@media screen and (max-width:625px) {
     .apropos {
     padding-top: 3vh;
     width: 100%;
