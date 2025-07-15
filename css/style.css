@@ -44,6 +44,8 @@ body {
 
 
 
+
+
 /*SECTION HEADER ORDI*/
 .header_bigo {
     display: none;
@@ -146,15 +148,7 @@ body {
 /*NAV BIGO*/
 
 @media screen and (max-width:895px) {
-   html,body, main, .header_bigo {
-        height: 100%;
-       max-width: 100%;
-        width: 100%;
-        box-sizing: border-box;
 
-
-       
-    }
 
      section {
         padding-top: 12vh;
@@ -1346,13 +1340,74 @@ display: none;
 
 
    
+}}
+
+
+
+    /*FOOTER*/
+
+footer {
+    position: relative;
+    background-color: var(--green-color);
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    width: 100%;
+    max-width: 100vw;
+    margin: 0; 
+    padding: 1rem 2vw; 
+    
+    box-sizing: border-box;
 }
 
+    .icone-reseaux {
+        display: flex;
+        gap: 30px;
+    }
+    .icone-reseaux img {
+        width: 55px;
+        height: auto;
+    }
 
+    .cgv {
+         display: flex;
+        gap: 5rem;
+    
 
+    }
 
+    .cgv a {
+        text-decoration: none;
+        color: #E0E0D5;
+        font-weight: 500;
+        font-size: 1.2rem;
+      
+    }
 
+    @media  screen and (max-width:625px) {
+        footer {
+            flex-direction: column;
+            gap: 20px;
+            padding-top: 1rem;
+       
+        }
 
-
+         .icone-reseaux img {
+        width: 40px;
+        height: auto;
+    }
+.cgv {
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+     gap: 0;
+    
 }
+     .cgv a {
+       
+        font-size: 15px;
+      
+    }
+
+    }
 

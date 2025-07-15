@@ -79,7 +79,7 @@ body,main {
     position: absolute;
     top: 20%;
     left: 25%;
-    height: 55vh;
+    max-height: fit-content;
     width: 50vw;
     padding: 0.5rem 2rem;
     border: solid 6px black;
@@ -257,3 +257,67 @@ body,main {
 
     }
 
+
+    /*FOOTER*/
+footer {
+    position: relative;
+    background-color: var(--green-color);
+    display: flex;
+    justify-content: space-between; /* <-- clé */
+    align-items: center;
+    width: 100%;
+    max-width: 100vw;
+    margin: 0; /* pas de marge qui fait dépasser */
+    padding: 1rem 2vw; /* padding interne pour respirer */
+    padding-top: 0;
+    box-sizing: border-box;
+}
+
+    .icone-reseaux {
+        display: flex;
+        gap: 30px;
+    }
+    .icone-reseaux img {
+        width: 55px;
+        height: auto;
+    }
+
+    .cgv {
+         display: flex;
+        gap: 5rem;
+    
+
+    }
+
+    .cgv a {
+        text-decoration: none;
+        color: #E0E0D5;
+        font-weight: 500;
+        font-size: 1.2rem;
+      
+    }
+
+    @media  screen and (max-width:625px) {
+        footer {
+            flex-direction: column;
+            gap: 20px;
+            padding-top: 1rem;
+            margin-top: 3rem;
+        }
+
+         .icone-reseaux img {
+        width: 40px;
+        height: auto;
+    }
+.cgv {
+    width: 100%;
+    justify-content: center;
+    
+}
+     .cgv a {
+       
+        font-size: 1rem;
+      
+    }
+
+    }
