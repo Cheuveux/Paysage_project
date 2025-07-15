@@ -75,6 +75,35 @@ body,main {
 }
 
 /*MAIN SECTION*/
+main {
+    padding-top: 2rem;
+}
+/*PREAMBULE*/
+.preambule {
+    color: #000000;
+    font-size: 1.3rem;
+    font-weight: 700;
+    display: flex;
+    flex-direction: column;
+    padding: 0rem 5rem;
+    padding-bottom: 2rem;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+   
+}
+
+.preambule a {
+    color: #6C8350;
+}
+
+.preambule p {
+    width: 30%;
+}
+
+/*FORMULAIRE*/ 
+
 .main-container {
     position: absolute;
     top: 20%;
@@ -192,7 +221,36 @@ body,main {
 
 /*MAIN SECTION*/
 @media screen and (max-width:525px) {
+/*MAIN SECTION*/
+main {
+    padding-top: 6rem;
+}
+/*PREAMBULE*/
+.preambule {
+    color: #000000;
+    font-size: 16px;
 
+    
+    font-weight: 800;
+    display: flex;
+    flex-direction: column;
+    padding: 0rem 0rem;
+   
+    padding-bottom: 2rem;
+    justify-content: space-around;
+    gap: 0px;
+    align-items: center;
+    text-align: center;
+
+   
+}
+
+.preambule a {
+    color: #6C8350;
+}
+.preambule p {
+    width: 90%;
+}
     .main-container {
         position: absolute;      
         width: 94vw;           
@@ -200,8 +258,8 @@ body,main {
         margin: 1rem;
           
         left: 0%;
-        top: 25%;
-        height: auto;         
+        top: 30%;
+        height: fit-content;         
         padding: 1rem;
         box-sizing: border-box;
     }

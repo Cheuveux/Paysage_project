@@ -1,0 +1,103 @@
+@font-face {
+    font-family: 'Frunchysage';
+    src: url('../assets/font/Frunchy_Sage/Frunchy_Sage/Frunchy.ttf')  format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Lora';
+    src: url('../assets/font/Lora/Lora/Lora-VariableFont_wght.ttf')  format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    --title-font : 'Frunchysage',  sans-serif;
+    --body-font : 'Lora', sans-serif;
+
+    --green-color: #6C8350;
+    --beige-color: #E0E0D5;
+
+    -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
+*::-webkit-scrollbar {
+  display: none;
+}
+main {
+    background-color: var(--beige-color);
+    position: relative;
+    padding-top: 5rem;
+    min-height: 100vh;
+}
+
+h1 {
+    font-family: var(--title-font);
+    font-size: 3rem;
+    color: var(--green-color);
+    font-weight: 600;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+   
+
+
+
+}
+
+.main-container {
+    padding: 1rem 7rem;
+   padding-bottom: 4rem;
+    color: rgb(29, 49, 26);
+    font-family: var(--body-font);
+}
+
+h2 {
+font-size: 1.5rem;
+margin-left: 15px;
+}
+
+.content {
+    padding-bottom: 20px;
+    max-width: 70%;
+    font-weight: 100;
+}
+
+
+
+@media screen and (max-width:895px) {
+    br {
+        display: block;
+    }
+
+    h1 {
+        width: 90%;
+        font-size: 1.8rem;
+        padding: 1rem 0rem;
+        padding-left: 1rem;
+        margin: 0;
+    }
+
+
+    .main-container {
+     margin: 0;
+    padding: 1rem 2rem;
+    padding-bottom: 4rem;
+    color: rgb(29, 49, 26);
+    font-family: var(--body-font);
+}
+
+h2 {
+font-size: 13px;
+margin-left: 15px;
+}
+
+.content {
+    padding-bottom: 10px;
+    max-width: 90%;
+    font-weight: 100;
+    font-size: 11px;
+}
+
+}
